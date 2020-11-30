@@ -82,12 +82,41 @@ const info2 = document.querySelector('.top-content .text-content:nth-of-type(2) 
 info2.textContent = siteContent["main-content"]["about-content"];
 
 const banner = document.querySelector('#middle-img');
-banner.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+banner.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 // bottom content
 
+const sub3 = document.querySelector('.bottom-content .text-content h4');
+sub3.textContent = siteContent["main-content"]["services-h4"];
 
+const info3 = document.querySelector('.bottom-content .text-content p');
+info3.textContent = siteContent["main-content"]["services-content"];
+ 
+const sub4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+sub4.textContent = siteContent["main-content"]["product-h4"];
 
+const info4 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+info4.textContent = siteContent["main-content"]["product-content"];
+
+const sub5 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+sub5.textContent = siteContent["main-content"]["vision-h4"];
+
+const info5 = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+info5.textContent = siteContent["main-content"]["vision-content"];
+
+// contact 
+
+const contacts = document.querySelector('.contact h4');
+contacts.textContent = siteContent["contact"]["contact-h4"];
+ 
+const address1 = document.querySelector(".contact p");
+address1.textContent = siteContent['contact']['address'];
+
+const address2 = document.querySelector(".contact p:nth-of-type(2)");
+address2.textContent = siteContent['contact']['phone'];
+
+const address3 = document.querySelector(".contact p:nth-of-type(3)");
+address3.textContent = siteContent['contact']['email'];
 
 // footer
 
