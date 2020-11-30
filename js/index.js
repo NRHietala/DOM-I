@@ -65,7 +65,7 @@ const hero = document.querySelector('#cta-img');
 hero.setAttribute('src', siteContent["cta"]["img-src"]);
 
 const button = document.querySelector('button');
-button.textContent = "Get Started";
+button.textContent = siteContent['cta']['button'];
 
 // top content
 
