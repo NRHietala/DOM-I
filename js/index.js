@@ -67,6 +67,21 @@ hero.setAttribute('src', siteContent["cta"]["img-src"]);
 const button = document.querySelector('button');
 button.textContent = siteContent['cta']['button'];
 
+const navBar = document.querySelector('nav');
+
+const tag1 = document.createElement('a');
+tag1.setAttribute('href', "#")
+tag1.textContent = "Home";
+navBar.prepend(tag1);
+
+const tag2 = document.createElement('a');
+tag2.setAttribute('href', "#")
+tag2.textContent = "Preview";
+navBar.append(tag2);
+
+const navLinks = document.querySelectorAll('a');
+navLinks.forEach(link => link.style.color = 'green');
+
 // top content
 
 const sub1 = document.querySelector('.top-content .text-content h4');
